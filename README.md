@@ -257,7 +257,7 @@ RxFetch makes it super easy to enqueue download requests and query downloads usi
 
 ```java
 FetchConfiguration fetchConfiguration = new FetchConfiguration.Builder(this).build();
-Rxfetch rxFetch = RxFetch.Impl.getInstance(fetchConfiguration);
+Rxfetch rxFetch = RxFetch.Impl.getRxInstance(fetchConfiguration);
 
 rxFetch.getDownloads()
         .asFlowable()
